@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Yogakṣema</title>
+    <!-- Css Section -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Css Section -->
+</head>
+<body>
+        <div class="heading display-4">
+            <span> <img src="images/Yogaksema.png" width="5%"> </span>
+          Yogakṣema
+        </div>
+        <div class="jumbotron bg">
+                <h1 class="display-4" style="font-size:4.5rem;">
+                    <div> <img src="images/Yogaksema.png" width="15%;" style="margin-left: 15rem;"> </div>
+                    <div style="margin-left: 16rem;font-size: xx-large">ಯೋಗಕ್ಷೇಮ</div> <hr style="border-top: unset">
+                  Welcome to Yogakṣema</h1>
+                <p class="lead">- Guarantees for the <strong>Ifs</strong> in Life.</p>
+        </div>
+
+        <div class="jumbotron">
+          <h1 class="display-4" style="text-align: center">Why Yogakṣema ?</h1>
+          <p class="lead">
+              Yogakṣema was created to meet the needs of your wishes to buy life protection products that are easy to understand, simple to get and affordable.
+             <br><br> Yogakṣema's wide range of insurance solutions give you peace of mind by helping to protect your future financial security and the wealth and assets you have worked hard to create.
+              <br><br> Best of all, Yogakṣema is 100% reliable. Get to know us and you will find that you are dealing with people you can trust.
+          </p>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4" style="text-align: center">Shield your family</h1>
+              <hr><br><br>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/life_insurance.jpg" alt="life_insurance">
+                        <div class="card-body">
+                          <h5 class="card-title">Life Insurance </h5>
+                          <footer class="blockquote-footer">from LIC</footer> <br>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" onclick="window.location.href='LIC.html'">
+                            Know More
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/health_insurance.jpg" alt="Health_insurance">
+                        <div class="card-body">
+                          <h5 class="card-title">Health Insurance</h5>
+                          <footer class="blockquote-footer">from Star Health Insurance</footer> <br>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-primary" onclick="window.location.href='STAR.html'">
+                            Know More
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="social-container">
+            <ul class="social-icons">
+                <li><a href="contact.html" ><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://instagram.com/yogaksema" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/YogaksemaLIC" target="_blank" ><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="mailto:yogaksemaindia@gmail.com" target="_top" ><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </div>
+<!-- Script Section -->
+<!-- Return to Top -->
+<a href="javascript:" id="top"><i class="icon-chevron-up"></i></a>
+<script>
+(function ($) {
+    $(document).ready(function(){
+      
+      // hide .navbar first
+      $(".heading").hide();
+      
+      // fade in .navbar
+      $(function () {
+          $(window).scroll(function () {
+              // set distance user needs to scroll before we fadeIn navbar
+              if ($(this).scrollTop() > 500) {
+                  $('.heading').fadeIn();
+          $('#top').fadeIn();  
+              } else {
+                  $('.heading').fadeOut();
+          $('#top').fadeOut();  
+              }
+          });
+  
+      
+      });
+  
+  });
+    }(jQuery));
+    // ===== Scroll to Top ==== 
+  $('#top').click(function () {           
+      $('body,html').animate({
+          scrollTop: 0                   
+      }, 500);
+  });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Script Section -->
+</body>
+</html>
